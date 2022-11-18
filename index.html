@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-steel fixed-top">
+            <div class="container">
+                <a href="" class="navbar-brand ml-4 text-center">Blog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <div class="navbar-nav mr-5">
+                        <a href="" class="nav-item nav-link">Home</a>
+                        <a href="" class="nav-item nav-link">About</a>
+                    </div>
+                    <div class="navbar-nav account-links">
+                        <a href="" class="nav-item nav-link">Login</a>
+                        <a href="" class="nav-item nav-link">Register</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header> 
+    <main class="container body-container" role="main">
+        <!-- modal delete form -->
+        <div class="modal fade" id="delete-post" tabindex="-1">
+            <div class="modal-dialog modal-dialog-start">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Delete Blog</h5>
+                        <button type="button" class="btn-sm btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post">
+                            <fieldset class="form-group text-center">
+                                <h5 class="text-muted">Are you sure you want to delete <b>""</b>?</h5>
+                                <div class="form-group text-center mt-4">
+                                    <button type="submit" class="btn btn-outline-danger">Delete <i class="bi-trash-fill"></i></button>
+                                   
+                                </div>
+                            </fieldset>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-sm-2">
+                <div class="card card-body pb-0">
+                    <article class="media content-section">
+                        <div class="d-flex align-items-start justify-content-center">
+                            <img src="nfs-heat.jpg" alt="img" class="rounded-circle article-img">
+                            <div class="media-body">
+                                <div class="article-metadata">
+                                    <a href="" class="mr-3">Mori Keli</a>
+                                    <small class="text-muted">17 Nov. 2022</small>
+                                    <hr class="mt-0">
+                                </div>
+                                <div class="delete-icon">
+                                    <a href="" class="icon" data-bs-toggle="modal" data-bs-target="#delete-post">
+                                        <i class="bi bi-trash-fill" style="color: #df3435"></i>
+                                    </a>
+                                </div>
+                                <h4><a href="" class="article-title">Blog 1</a></h4>
+                                <p class="article-content">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam perferendis quisquam suscipit voluptatibus vel, dolorum nemo hic nisi neque. Culpa nihil labore sint quisquam et quam. Repudiandae, quis quod?
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </article>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="content-section">
+                    <h4>Your sidebar</h4>
+                    <p class="text-muted">Additional info.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-light">21 Blogs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="container body-container">
+        
+    </div>
+</body>
+</html>
+
