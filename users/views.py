@@ -4,18 +4,18 @@ from django.contrib.auth.views import LoginView, LogoutView
 # Create your views here.
 
 class UserLogin(LoginView):
-    template_name = 'login.html'
+    template_name = 'users/login.html'
 
 
 def homepage_view(request):
-    return render(request, 'index.html')
+    return render(request, 'users/index.html')
 
 def userprofile_view(request):
-    return render(request, 'profile.html')
+    return render(request, 'users/profile.html')
 
 def uploadblog_view(request):
-    return render(request, 'upload.html')
+    return render(request, 'users/upload.html')
 
 
 class LogoutUser(LogoutView):
-    template_name = 'logout.html'
+    template_name = 'users/logout.html'
